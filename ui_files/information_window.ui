@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InformationForm</class>
+ <widget class="QWidget" name="InformationForm">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>855</width>
+    <height>752</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Información</string>
+  </property>
+  <widget class="QTextBrowser" name="textBrowser">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>100</y>
+     <width>751</width>
+     <height>511</height>
+    </rect>
+   </property>
+   <property name="html">
+    <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; color:#9900ff;&quot;&gt;Bienvenido/a a GENOMOS. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; color:#9900ff;&quot;&gt; &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-style:italic; color:#c300c3;&quot;&gt;Aedes aegypti&lt;/span&gt;&lt;span style=&quot; font-size:8pt; color:#c300c3;&quot;&gt;, el mosquito transmisor del dengue y otros virus, se controla con pesticidas llamados piretroides. Sin embargo, se han identificado mutaciones en los sitios 1016 y 1534 de estos insectos, otorgándoles resistencia. El genotipo resultante de estas posiciones puede ser sensible (S), heterocigoto (R1 o R2), o resistente (R1R1, R2R3, etc.), según combinaciones específicas de las mutaciones en los sitios 1016 y 1534.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; color:#c300c3;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; color:#aa00ff;&quot;&gt;El cálculo de la Tm (temperatura de melting) se realiza automáticamente en el programa de qPCR (Agilent Aria). Este dato es crucial para comparar las Tm de muestras de genotipo desconocido con las muestras estándar de genotipo conocido. Se proporcionan ejemplos de Tm estándar para cada posición (1016 y 1534), los cuales pueden variar entre análisis. Al cargar las Tm de las muestras desconocidas, el objetivo es determinar tanto el genotipo para cada posición como el genotipo resultante. Por ejemplo, si una muestra tiene Tm de 73.3 para 1016 y 82.9 para 1534, se infiere que el mosquito es Sensible para 1016 y Resistente para 1534, resultando en un genotipo R1R1. &lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; color:#aa00ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; color:#aa00ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:8px; margin-right:0px; border-collapse:collapse;&quot; cellspacing=&quot;2&quot; cellpadding=&quot;0&quot; bgcolor=&quot;#ffffff&quot;&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; font-weight:600; color:#212121;&quot;&gt;Alelo&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; font-weight:600; color:#212121;&quot;&gt;Estándars&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; font-weight:600; color:#212121;&quot;&gt;Tm&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;1016&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;SS&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;73.36&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;1016&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;SR&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;72.83&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;1016&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;RR&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;72.55&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;1534&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;SS&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;82.23&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;1534&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;SR&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;82.5&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;1534&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;RR&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:middle; padding-left:8; padding-right:8; padding-top:8; padding-bottom:8; border-top-color:#000000; border-right-color:#000000; border-bottom-color:#000000; border-left-color:#000000;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:'Roboto','Noto','sans-serif'; font-size:8pt; color:#212121;&quot;&gt;82.94&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt; color:#aa00ff;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; color:#9a009a;&quot;&gt;GENOMOS es un programa que busca recrear este proceso, utilizando Tm estándars como referencia para determinar genotipos a partir de las Tm de muestras desconocidas.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_cenexa_button">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>640</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover
+{
+	border-style: solid;
+   	background-color:#bbdefb;
+
+}
+
+QPushButton:pressed
+{
+	 	background-color:#0069c0;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../assets/icons/logo-cenexa.png</normaloff>../assets/icons/logo-cenexa.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_creg">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>640</y>
+     <width>181</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton:hover
+{
+	border-style: solid;
+   	background-color:#bbdefb;
+
+}
+
+QPushButton:pressed
+{
+	 	background-color:#0069c0;
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>../assets/icons/logo creg.png</normaloff>../assets/icons/logo creg.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>150</width>
+     <height>150</height>
+    </size>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>831</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>791</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;INFORMACIÓN&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_6">
+   <property name="geometry">
+    <rect>
+     <x>260</x>
+     <y>720</y>
+     <width>331</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'arial','sans-serif'; font-size:14px; color:#4d5156;&quot;&gt;© 2024 GENOMOS. Todos los derechos reservados.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
