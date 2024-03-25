@@ -13,14 +13,14 @@ To download the project, you can visit the following link:
 
 The program allows the reading of databases in both Excel (.xlsx) and CSV (.csv) formats. To ensure correct data integration and prevent errors in the program, it is necessary for the columns to be arranged in the following order:
 
-Samples of melting temperatures for allele 1016 (with the column name 'temperature_melting_1016').
-Samples of melting temperatures for allele 1534 (with the column name 'temperature_melting_1534').
-Standard temperature for allele 1016 associated with the 'SS' or sensitive genotype (with the column name 'temperature_melting_1016_SS').
-Standard temperature for allele 1016 associated with the 'SR' or heterozygous genotype (with the column name 'temperature_melting_1016_SR').
-Standard temperature for allele 1016 associated with the 'RR' or resistant genotype (with the column name 'temperature_melting_1016_RR').
-Standard temperature for allele 1534 associated with the 'SS' or sensitive genotype (with the column name 'temperature_melting_1534_SS').
-Standard temperature for allele 1534 associated with the 'SR' or heterozygous genotype (with the column name 'temperature_melting_1534_SR').
-Standard temperature for allele 1534 associated with the 'RR' or resistant genotype (with the column name 'temperature_melting_1534_RR').
+*** Samples of melting temperatures for allele 1016 (with the column name 'temperature_melting_1016').
+*** Samples of melting temperatures for allele 1534 (with the column name 'temperature_melting_1534').
+*** Standard temperature for allele 1016 associated with the 'SS' or sensitive genotype (with the column name 'temperature_melting_1016_SS').
+*** Standard temperature for allele 1016 associated with the 'SR' or heterozygous genotype (with the column name 'temperature_melting_1016_SR').
+*** Standard temperature for allele 1016 associated with the 'RR' or resistant genotype (with the column name 'temperature_melting_1016_RR').
+*** Standard temperature for allele 1534 associated with the 'SS' or sensitive genotype (with the column name 'temperature_melting_1534_SS').
+*** Standard temperature for allele 1534 associated with the 'SR' or heterozygous genotype (with the column name 'temperature_melting_1534_SR').
+*** Standard temperature for allele 1534 associated with the 'RR' or resistant genotype (with the column name 'temperature_melting_1534_RR').
 
 To incorporate this data, simply click on the "Open Data" button. If the column names and their order are correct, a message will appear in the console indicating that the data has been successfully incorporated.
 
