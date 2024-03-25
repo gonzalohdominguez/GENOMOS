@@ -94,7 +94,7 @@ class ListGenotypeWindow(QWidget,ListGenotypeForm):
             window = ResultsGenotypeWindow(self, table_data)
             window.show()
         else:
-            msg_boxes.input_error_msgbox("Error", "No se pueden mostrar resultados porque la tabla está vacía")
+            msg_boxes.input_error_msgbox("Error", "Results cannot be displayed because the table is empty.")
 
     # Agrega una función para obtener los datos de la tabla
     def get_table_data(self):
@@ -119,7 +119,7 @@ class ListGenotypeWindow(QWidget,ListGenotypeForm):
             window = EditGenotypeWindow(self, genotype_id)
             window.show()
         else:
-            msg_boxes.input_error_msgbox("Error", "No se seleccionó la muestra a editar")
+            msg_boxes.input_error_msgbox("Error", "The sample to edit was not selected.")
 
         # Luego de editar, se deselecciona la fila que anteriormente estaba selecciona 
         self.listGenotypeTable.clearSelection()
@@ -128,7 +128,7 @@ class ListGenotypeWindow(QWidget,ListGenotypeForm):
     # Eliminar Muestra
     def remove_genotype(self):
         selected_row = self.listGenotypeTable.selectedItems()
-        resp = msg_boxes.warging_msgbox("Eliminar Muestra", "¿Está seguro de eliminar esta muestra?")
+        resp = msg_boxes.warging_msgbox("Delete Sample", "Are you sure you want to delete this sample?")
         if resp == QMessageBox.Yes:
             if selected_row: # Si hay alguna fila seleccionada
                 genotype_id = int(selected_row[0].text())
@@ -180,7 +180,7 @@ class ListGenotypeWindow(QWidget,ListGenotypeForm):
     # Importación de un archivo Excel o CSV para cargar en la tabla
     def open_data_file(self):
         options = QFileDialog.Options()
-        file_name, _ = QFileDialog.getOpenFileName(self, "Abrir archivo de datos", "", "Archivos Excel (*.xlsx);;Archivos CSV (*.csv)", options=options)
+        file_name, _ = QFileDialog.getOpenFileName(self, "Open data file", "", "Excel files (*.xlsx);;CSV files (*.csv)", options=options)
 
         if file_name:
             # Verificar el tipo de archivo
@@ -191,7 +191,7 @@ class ListGenotypeWindow(QWidget,ListGenotypeForm):
                 # Leer datos desde el archivo CSV
                 data = pd.read_csv(file_name)
             else:
-                msg_boxes.input_error_msgbox("Formato de archivo no compatible", "Por favor, use archivos Excel (.xlsx) o archivos CSV (.csv).")
+                msg_boxes.input_error_msgbox("Unsupported file format", "Please use Excel files (.xlsx) or CSV files (.csv).")
                 return
 
             # Verificar exactamente ocho columnas y los nombres de las columnas
@@ -215,10 +215,10 @@ class ListGenotypeWindow(QWidget,ListGenotypeForm):
                 self.show_data_in_table(data)
                 # Almacenar datos en la base de datos
                 self.store_data_in_database(data)
-                msg_boxes.correct_msgbox("Verificación","Datos almacenados correctamente")
+                msg_boxes.correct_msgbox("Verification","Data stored correctly")
 
             else:
-                msg_boxes.input_error_msgbox("Error", "El archivo debe contener exactamente ocho columnas con los nombres correctos.")
+                msg_boxes.input_error_msgbox("Error", "The file must contain exactly eight columns with the correct names.")
 
     def show_data_in_table(self, data):
         # Llenar la tabla con los nuevos datos
@@ -248,19 +248,19 @@ class ListGenotypeWindow(QWidget,ListGenotypeForm):
     def export_table(self):
         options = QFileDialog.Options()
         file_name, _ = QFileDialog.getSaveFileName(
-            self, "Guardar archivo", "", "Archivos Excel (*.xlsx);;Archivos CSV (*.csv)", options=options
+            self, "Save file", "", "Excel files (*.xlsx);;CSV files (*.csv)", options=options
         )
 
         if file_name:
             # Verificar el tipo de archivo seleccionado
             if file_name.endswith('.xlsx'):
                 self.export_to_excel(file_name)
-                msg_boxes.correct_msgbox("Verificación","Archivo Excel exportado correctamente")
+                msg_boxes.correct_msgbox("Verification","Excel file exported successfully.")
             elif file_name.endswith('.csv'):
                 self.export_to_csv(file_name)
-                msg_boxes.correct_msgbox("Verificación","Archivo CSV exportado correctamente")
+                msg_boxes.correct_msgbox("Verification","CSV file exported successfully.")
             else:
-                msg_boxes.input_error_msgbox("Formato de archivo no compatible.", "Por favor, use archivos Excel (.xlsx) o archivos CSV (.csv).")
+                msg_boxes.input_error_msgbox("Unsupported file format.", "Please use Excel files (.xlsx) or CSV files (.csv).")
 
     def export_to_excel(self, file_name):
         # Obtener datos de la tabla
@@ -288,7 +288,7 @@ class ListGenotypeWindow(QWidget,ListGenotypeForm):
 
     # ---------------------------------------------- Búsquedas ----------------------------------------------
     def populate_combobox(self):
-        cb_options = ("", "ID", "Temperatura 1016", "Temperatura 1534")
+        cb_options = ("", "ID", "Temperature 1016", "Temperature 1534")
         self.searchByCombobox.addItems(cb_options)
 
     def search_genotype_by_id(self, _id):
@@ -312,15 +312,15 @@ class ListGenotypeWindow(QWidget,ListGenotypeForm):
         # Obtenemos el parámetro por el cual el usuario quiere buscar
         parameter = self.parameterLineEdit.text()
         if option_selected == "":
-            msg_boxes.input_error_msgbox("Error", "Debe seleccionar una opción")
+            msg_boxes.input_error_msgbox("Error", "You must select an option.")
         else:
             if parameter == "":
-                msg_boxes.input_error_msgbox("Error", "Debe escribir lo que desea consultar")
+                msg_boxes.input_error_msgbox("Error", "You must write what you want to inquire.")
             else: 
                 # Si searchByCombobox no está vacio ni parameterLineEdit está vacio
                 if option_selected == "ID":
                     self.search_genotype_by_id(parameter)
-                elif option_selected == "Temperatura 1016":
+                elif option_selected == "Temperature 1016":
                     self.search_genotype_by_temperature_melting_1016(parameter)
-                elif option_selected == "Temperatura 1534":
+                elif option_selected == "Temperature 1534":
                     self.search_genotype_by_temperature_melting_1534(parameter)

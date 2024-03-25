@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Resultados</string>
+   <string>Results</string>
   </property>
   <widget class="QTableWidget" name="tableResults">
    <property name="geometry">
@@ -52,7 +52,7 @@ QPushButton:hover
 }</string>
    </property>
    <property name="text">
-    <string>DESCARGAR</string>
+    <string>DOWNLOAD</string>
    </property>
    <property name="icon">
     <iconset>
@@ -96,7 +96,7 @@ QPushButton:hover
      <enum>QFrame::WinPanel</enum>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;RESULTADOS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:600;&quot;&gt;RESULTS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>

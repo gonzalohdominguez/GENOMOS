@@ -70,54 +70,54 @@ class ResultsGenotypeWindow(QWidget, ResultsGenotypeForm):
             estado_1534 = None
 
             if SS1016 < SR1016 and SS1016 < RR1016:
-                genotipo_1016 = "Sensible"
-                estado_1016 = "Sensible"
+                genotipo_1016 = "Sensitive"
+                estado_1016 = "Sensitive"
             elif SR1016 < SS1016 and SR1016 < RR1016:
-                genotipo_1016 = "Heterocigoto"
-                estado_1016 = "Heterocigoto"
+                genotipo_1016 = "Heterozygous"
+                estado_1016 = "Heterozygous"
             elif RR1016 < SS1016 and RR1016 < SR1016:
-                genotipo_1016 = "Resistente"
-                estado_1016 = "Resistente"
+                genotipo_1016 = "Resistant"
+                estado_1016 = "Resistant"
 
             if SS1534 < SR1534 and SS1534 < RR1534:
-                genotipo_1534 = "Sensible"
-                estado_1534 = "Sensible"
+                genotipo_1534 = "Sensitive"
+                estado_1534 = "Sensitive"
             elif SR1534 < SS1534 and SR1534 < RR1534:
-                genotipo_1534 = "Heterocigoto"
-                estado_1534 = "Heterocigoto"
+                genotipo_1534 = "Heterozygous"
+                estado_1534 = "Heterozygous"
             elif RR1534 < SS1534 and RR1534 < SR1534:
-                genotipo_1534 = "Resistente"
-                estado_1534 = "Resistente"
+                genotipo_1534 = "Resistant"
+                estado_1534 = "Resistant"
 
             # Resto del código para determinar genotipos y estados
 
             if genotipo_1016 is not None and genotipo_1534 is not None:
-                if genotipo_1016 == "Sensible" and genotipo_1534 == "Sensible":
+                if genotipo_1016 == "Sensitive" and genotipo_1534 == "Sensitive":
                     genotipo_resultante = "SS"
-                elif genotipo_1016 == "Sensible" and genotipo_1534 == "Heterocigoto":
+                elif genotipo_1016 == "Sensitive" and genotipo_1534 == "Heterozygous":
                     genotipo_resultante = "SR1"
-                elif genotipo_1016 == "Sensible" and genotipo_1534 == "Resistente":
+                elif genotipo_1016 == "Sensitive" and genotipo_1534 == "Resistant":
                     genotipo_resultante = "R1R1"
-                elif genotipo_1016 == "Heterocigoto" and genotipo_1534 == "Sensible":
+                elif genotipo_1016 == "Heterozygous" and genotipo_1534 == "Sensitive":
                     genotipo_resultante = "SR3"
-                elif genotipo_1016 == "Heterocigoto" and genotipo_1534 == "Heterocigoto":
+                elif genotipo_1016 == "Heterozygous" and genotipo_1534 == "Heterozygous":
                     genotipo_resultante = "SR2"
-                elif genotipo_1016 == "Heterocigoto" and genotipo_1534 == "Resistente":
+                elif genotipo_1016 == "Heterozygous" and genotipo_1534 == "Resistant":
                     genotipo_resultante = "R1R2"
-                elif genotipo_1016 == "Resistente" and genotipo_1534 == "Heterocigoto":
+                elif genotipo_1016 == "Resistant" and genotipo_1534 == "Heterozygous":
                     genotipo_resultante = "R2R3"
-                elif genotipo_1016 == "Resistente" and genotipo_1534 == "Sensible":
+                elif genotipo_1016 == "Resistant" and genotipo_1534 == "Sensitive":
                     genotipo_resultante = "R3R3"
-                elif genotipo_1016 == "Resistente" and genotipo_1534 == "Resistente":
+                elif genotipo_1016 == "Resistant" and genotipo_1534 == "Resistant":
                     genotipo_resultante = "R2R2"
                 else:
-                    genotipo_resultante = "Desconocido"
+                    genotipo_resultante = "Unknown"
 
                 resultados.append((i, j, estado_1016, estado_1534, genotipo_resultante))
                 genotipos_resultantes.append(genotipo_resultante)
             else:
-                resultados.append((i, j, "No se pudo determinar", "Desconocido", "Desconocido"))
-                genotipos_resultantes.append("No se pudo determinar")
+                resultados.append((i, j, "Could not be determined", "Unknown", "Unknown"))
+                genotipos_resultantes.append("Could not be determined")
 
         # Crear un nuevo DataFrame con los resultados
         resultados_df = pd.DataFrame(resultados, columns=["Tm_1016", "Tm_1534", "Estado_1016", "Estado_1534", "Genotipo_Resultante"])
@@ -152,13 +152,13 @@ class ResultsGenotypeWindow(QWidget, ResultsGenotypeForm):
         # Crear el gráfico de barras
         plt.figure(figsize=(10, 6))
         plt.bar(genotipos_filtrados, cantidades_filtradas, color=colores_filtrados)
-        plt.xlabel("Genotipo")
-        plt.ylabel("Porcentaje")
-        plt.title("Distribución de Genotipos")
+        plt.xlabel("Genotype")
+        plt.ylabel("Percentage")
+        plt.title("Genotype Distribution")
 
         # Agregar una leyenda de colores
         handles = [plt.Rectangle((0, 0), 1, 1, color=color) for color in colores_filtrados]
-        plt.legend(handles, genotipos_filtrados, title="Genotipos")
+        plt.legend(handles, genotipos_filtrados, title="Genotypes")
 
         plt.xticks(rotation=45)
 
@@ -203,7 +203,7 @@ class ResultsGenotypeWindow(QWidget, ResultsGenotypeForm):
         # Crear el gráfico de torta con colores personalizados
         plt.figure(figsize=(8, 8))
         plt.pie(sumas, labels=nombres_alelos, colors=colores, autopct='%1.1f%%', startangle=140)
-        plt.title('Distribución de Suma de Alelos')
+        plt.title('Allele Sum Distribution')
         plt.axis('equal')  # Para que el gráfico sea un círculo perfecto
 
         # Mostrar el gráfico
@@ -231,7 +231,7 @@ class ResultsGenotypeWindow(QWidget, ResultsGenotypeForm):
     def descargar_resultados(self):
         options = QFileDialog.Options()
         file_name, _ = QFileDialog.getSaveFileName(
-            self, "Guardar archivo", "", "Archivos Excel (*.xlsx)", options=options
+            self, "Save file", "", "Excel files (*.xlsx)", options=options
         )
 
         if file_name:
@@ -239,7 +239,7 @@ class ResultsGenotypeWindow(QWidget, ResultsGenotypeForm):
             if file_name.endswith('.xlsx'):
                 self.export_to_excel(file_name)
             else:
-                print("Formato de archivo no compatible. Por favor, use archivos Excel (.xlsx)")
+                print("Unsupported file format. Please use Excel files (.xlsx)")
         
     
     def export_to_excel(self, file_name):
@@ -249,7 +249,7 @@ class ResultsGenotypeWindow(QWidget, ResultsGenotypeForm):
             data.append([self.tableResults.item(row, col).text() for col in range(self.tableResults.columnCount())])
 
         # Crear un DataFrame de Pandas
-        df = pd.DataFrame(data, columns=["Tm_1016", "Tm_1534", "Estado_1016", "Estado_1534","Genotipo_Resultante"])
+        df = pd.DataFrame(data, columns=["Tm_1016", "Tm_1534", "Estado_1016", "Estado_1534", "Genotipo_Resultante"])
 
         # Escribir el DataFrame en un archivo Excel
         df.to_excel(file_name, index=False)

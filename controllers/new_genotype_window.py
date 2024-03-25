@@ -70,7 +70,7 @@ class NewGenotypeWindow(QWidget, NewGenotypeForm):
         if errors_count == 0:
             return True
         else: 
-            msg_boxes.input_error_msgbox("Error", "Todos los campos son obligatorios")
+            msg_boxes.input_error_msgbox("Error", "All fields are mandatory.")
 
     # Función que agrega una nueva muestra
     def add_genotype(self):
@@ -91,9 +91,9 @@ class NewGenotypeWindow(QWidget, NewGenotypeForm):
             if insert_genotype(data):
                 # Si la muestra se insertó en la BD correctamente, ejecutamos la función que me limpias las cajas de texto
                 self.clean_inputs()
-                msg_boxes.correct_msgbox("Información", "Correcta inserción de una muestra")
+                msg_boxes.correct_msgbox("Information", "Successful sample insertion.")
             else: # Si ocurre algún error en la inserción de la muestra
-                msg_boxes.input_error_msgbox("Error", "Error en la inserción de una muestra")
+                msg_boxes.input_error_msgbox("Error", "Error in sample insertion.")
 
     # Función que, luego de agregar una muestra, "limpia" los inputs
     def clean_inputs(self):

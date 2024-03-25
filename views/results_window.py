@@ -50,8 +50,8 @@ class ResultsGenotypeForm(object):
     # setupUi
 
     def retranslateUi(self, ResultsGenotypeForm):
-        ResultsGenotypeForm.setWindowTitle(QCoreApplication.translate("ResultsGenotypeForm", u"Resultados", None))
-        self.download_results.setText(QCoreApplication.translate("ResultsGenotypeForm", u"DESCARGAR", None))
-        self.label.setText(QCoreApplication.translate("ResultsGenotypeForm", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:600;\">RESULTADOS</span></p></body></html>", None))
+        ResultsGenotypeForm.setWindowTitle(QCoreApplication.translate("ResultsGenotypeForm", u"Results", None))
+        self.download_results.setText(QCoreApplication.translate("ResultsGenotypeForm", u"DOWNLOAD", None))
+        self.label.setText(QCoreApplication.translate("ResultsGenotypeForm", u"<html><head/><body><p align=\"center\"><span style=\" font-size:11pt; font-weight:600;\">RESULTS</span></p></body></html>", None))
     # retranslateUi
 

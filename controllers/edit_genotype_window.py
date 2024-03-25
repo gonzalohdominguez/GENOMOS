@@ -110,5 +110,5 @@ class EditGenotypeWindow(QWidget, EditGenotypeForm):
             
             # Pasamos los datos para modificar la muestra a la función perteneciente al archivo genotype.py
             if update_genotype(self._id, data):
-                msg_boxes.correct_msgbox("Información", "Correcta edición de una muestra")
+                msg_boxes.correct_msgbox("Information", "The correct editing of a sample")
                 self.close()

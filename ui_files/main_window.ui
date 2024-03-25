@@ -80,7 +80,7 @@ QPushButton:pressed
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Nueva Muestra&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;New Sample&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="open_edit_button">
@@ -135,7 +135,7 @@ QPushButton:pressed
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Editar Muestra&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Edit Sample&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="delete_genotype_button">
@@ -185,12 +185,12 @@ QPushButton:pressed
      <rect>
       <x>250</x>
       <y>60</y>
-      <width>121</width>
+      <width>111</width>
       <height>21</height>
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Eliminar Muestra&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Delete Sample&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="info_genotype_button">
@@ -245,7 +245,7 @@ QPushButton:pressed
      </rect>
     </property>
     <property name="text">
-     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Información&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Information&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
    <widget class="QPushButton" name="logo_cenexa_button">
@@ -358,7 +358,7 @@ QPushButton:pressed
      </rect>
     </property>
     <property name="text">
-     <string>Buscar por:</string>
+     <string>Search by:</string>
     </property>
    </widget>
    <widget class="QComboBox" name="searchByCombobox">
@@ -391,7 +391,7 @@ QPushButton:pressed
      </rect>
     </property>
     <property name="text">
-     <string>BUSCAR</string>
+     <string>SEARCH</string>
     </property>
     <property name="icon">
      <iconset>
@@ -408,7 +408,7 @@ QPushButton:pressed
      </rect>
     </property>
     <property name="text">
-     <string>ACTUALIZAR</string>
+     <string>UPDATE</string>
     </property>
     <property name="icon">
      <iconset>
@@ -454,14 +454,14 @@ QPushButton:pressed
   <widget class="QLabel" name="label_6">
    <property name="geometry">
     <rect>
-     <x>10</x>
+     <x>20</x>
      <y>630</y>
-     <width>161</width>
+     <width>131</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Cantidad de registros: &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Number of records:&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
   </widget>
   <widget class="QLabel" name="genotypesQtyLabel">
@@ -518,7 +518,7 @@ QPushButton:pressed
 }</string>
     </property>
     <property name="text">
-     <string>Resultados</string>
+     <string>Results</string>
     </property>
     <property name="default">
      <bool>true</bool>
@@ -550,7 +550,7 @@ QPushButton:pressed
 }</string>
     </property>
     <property name="text">
-     <string>Abrir datos</string>
+     <string>Open data</string>
     </property>
     <property name="default">
      <bool>false</bool>
@@ -582,7 +582,7 @@ QPushButton:pressed
 }</string>
     </property>
     <property name="text">
-     <string>Guardar datos</string>
+     <string>Save data</string>
     </property>
     <property name="default">
      <bool>false</bool>
@@ -614,7 +614,7 @@ QPushButton:pressed
 }</string>
     </property>
     <property name="text">
-     <string>Eliminar datos</string>
+     <string>Delete data</string>
     </property>
     <property name="default">
      <bool>false</bool>
