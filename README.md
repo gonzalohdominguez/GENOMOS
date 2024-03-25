@@ -8,7 +8,7 @@ The objective is to replicate this entire procedure in the developed program (ca
 
 GENOMOS is a desktop application that has been entirely developed in the Python programming language, designed with Qt Creator using the PySide2 module. PySide2 is the official Python module of the Qt project. On the other hand, Qt Creator is a cross-platform Integrated Development Environment (IDE) programmed in C++, JavaScript, and QML, developed by Trolltech. This IDE is part of the SDK used for the development of applications with Graphical User Interfaces (GUI). Additionally, SQLite was employed as the database manager. 
 
-To download the project, you can visit the following link:
+*** To download and install the project on a Windows (64-bit) operating system, you can access the following link: ***
 
 
 The program allows the reading of databases in both Excel (.xlsx) and CSV (.csv) formats. To ensure correct data integration and prevent errors in the program, it is necessary for the columns to be arranged in the following order:
